@@ -4,13 +4,14 @@ Cómo practicar Gestión de Datos usando un Docker container.
 
 ## Setup
 
-| Comando        | Acción                                               |
-| -------------- | ---------------------------------------------------- |
-| `make`         | Levantar el container                                |
-| `make logs`    | Revisar los logs del container                       |
-| `make restore` | Restaurar el backup (requiere que ya esté levantado) |
-| `make stop`    | Detener el container iniciado                        |
-| `make clean`   | Borrar el container y la imagen asociada             |
+| Comando        | Acción                                      |
+| -------------- | ------------------------------------------- |
+| `make`         | Levantar el container y restaurar el backup |
+| `make start`   | Solo levantar el container                  |
+| `make restore` | Solo restaurar el backup                    |
+| `make logs`    | Revisar los logs del container              |
+| `make stop`    | Detener el container iniciado               |
+| `make clean`   | Borrar el container y la imagen asociada    |
 
 ## Conexión
 
