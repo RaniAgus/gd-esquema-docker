@@ -54,8 +54,8 @@ misma que configuramos en el campo `SA_PASSWORD` del archivo
 
 ### Uso
 
-En la carpeta `scripts/` están todos los ejercicios comentados, una vez
-resolvamos un ejercicio le damos a `Execute`:
+En la carpeta `scripts/` están todos los ejercicios comentados. Una vez
+resolvamos un ejercicio, seleccionamos el query y le damos a `Execute`:
 
 ![image](https://user-images.githubusercontent.com/39303639/217720542-59ea42dc-a8fa-435d-a17a-38bf380ee34a.png)
 
