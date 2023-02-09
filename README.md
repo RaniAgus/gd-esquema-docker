@@ -2,8 +2,6 @@
 
 Cómo practicar Gestión de Datos usando un Docker container.
 
-![model](./model.jpg)
-
 ## Comandos útiles
 
 | Comando        | Acción                                      |
@@ -19,12 +17,32 @@ Cómo practicar Gestión de Datos usando un Docker container.
 
 ### Setup
 
-Para [DataGrip], debemos abrir la carpeta del repositorio y luego hacer
-click en la base de datos desde el `Database Explorer`:
+Para [DataGrip], primero vamos a instalar los siguientes plugins: 
+
+- [Docker](https://plugins.jetbrains.com/plugin/7724-docker)
+- [Makefile Language](https://plugins.jetbrains.com/plugin/9333-makefile-language)
+- [Markdown](https://plugins.jetbrains.com/plugin/7793-markdown)
+- [PDF Viewer](https://plugins.jetbrains.com/plugin/14494-pdf-viewer)
+- [Terminal](https://plugins.jetbrains.com/plugin/13123-terminal)
+
+Segundo, ~~Francia~~ abriremos el archivo `docker-compose.yml` y configuraremos
+una password para nuestra base de datos:
+
+![image](https://user-images.githubusercontent.com/39303639/217802783-3d19754d-2e4f-4439-8573-511c6cc745fa.png)
+
+Luego, restauraremos el backup de la base de datos abriendo una consola y 
+ejecutando `make`, o abriendo el archivo `makefile` y ejecutándolo desde ahí:
+
+![image](https://user-images.githubusercontent.com/39303639/217801577-67cee533-3cdc-4183-b328-161f888ad114.png)
+
+Por último, abriremos la carpeta del repositorio y haremos click en la base de
+datos desde el `Database Explorer`:
 
 ![image](https://user-images.githubusercontent.com/39303639/217720064-3c645d00-0e42-42ee-bd1d-a0f0be69b528.png)
 
-De ahí, nos va a pedir usuario y contraseña:
+De ahí, nos va a pedir un user, que siempre será `sa`; y password, que es la
+misma que configuramos en el campo `SA_PASSWORD` del archivo
+`docker-compose.yml`:
 
 ![image](https://user-images.githubusercontent.com/39303639/217720199-6109b91e-226d-4bb5-9609-e07d1072b811.png)
 
@@ -44,42 +62,3 @@ resolvamos un ejercicio le damos a `Execute`:
 Y se va a mostrar el resultado:
 
 ![image](https://user-images.githubusercontent.com/39303639/217720669-902f3633-607b-4b63-bfbe-841a45c2f8c7.png)
-
-
-## Azure Data Studio
-
-### Setup
-
-Ambas prácticas cuentan con su propio Jupyter Notebook, que podemos abrir
-usando [Azure Data Studio]. Para esto, primero abriremos la carpeta del
-repositorio, luego nos moveremos a `Notebooks` > `Open Notebooks in Folder`, y
-por último seleccionaremos la carpeta `notebooks/`:
-
-![image](https://user-images.githubusercontent.com/39303639/217681182-4d7c6d37-fc7c-4a1f-8b02-51bc6366827b.png)
-
-Una vez abiertos los notebooks, debemos vincularlos a una conexión que
-estableceremos con la base de datos ya levantada haciendo click en
-`Change Collection`:
-
-![image](https://user-images.githubusercontent.com/39303639/217681452-6215a336-1d60-44ff-8b0a-24fd38eb6575.png)
-
-Y nos conectaremos a la base de datos con los siguientes parámetros:
-
-![image](https://user-images.githubusercontent.com/39303639/217682268-b5f06f63-f250-4ffb-95b2-f8e3748443b5.png)
-
-> Nota: La password es la misma que hayas configurado en el campo `SA_PASSWORD`
-> del archivo `docker-compose.yml`
-
-[Azure Data Studio]: https://docs.microsoft.com/en-us/sql/azure-data-studio/download-azure-data-studio
-
-### Uso
-
-Ambos notebooks cuentan con los enunciados y un bloque de código en donde
-ingresar el query sql para luego ejecutarlo:
-
-![image](https://user-images.githubusercontent.com/39303639/217708111-c83ecffa-7270-48bc-89e9-3d689afa9e9f.png)
-
-Una vez ejecutado, nos aparecerá el resultado, que podremos limpiar
-seleccionando `...` > `Clear Result`:
-
-![image](https://user-images.githubusercontent.com/39303639/217708268-96fde236-2532-4a39-908a-a9bd0f0bfaec.png)
