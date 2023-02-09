@@ -2,6 +2,8 @@
 
 Cómo practicar Gestión de Datos usando un Docker container.
 
+![model](./model.jpg)
+
 ## Setup
 
 | Comando        | Acción                                      |
@@ -16,17 +18,15 @@ Cómo practicar Gestión de Datos usando un Docker container.
 ## Setup en Azure Data Studio
 
 Ambas prácticas cuentan con su propio Jupyter Notebook, que podemos abrir
-usando [Azure Data Studio]. Para esto, nos moveremos a `Notebooks` > 
-`Open Notebooks in Folder`, y luego seleccionaremos la carpeta de este 
-repositorio:
+usando [Azure Data Studio]. Para esto, primero abriremos la carpeta del
+repositorio, luego nos moveremos a `Notebooks` > `Open Notebooks in Folder`, y
+por último seleccionaremos la carpeta `notebooks`:
 
 ![image](https://user-images.githubusercontent.com/39303639/217681182-4d7c6d37-fc7c-4a1f-8b02-51bc6366827b.png)
 
-Una vez abierto el notebook, debemos vincularlo a una conexión que
-estableceremos con la base de datos ya levantada ejecutando el comando
-`make start`.
-
-Para esto, seleccionaremos `Change Collection`:
+Una vez abiertos los notebooks, debemos vincularlos a una conexión que
+estableceremos con la base de datos ya levantada haciendo click en
+`Change Collection`:
 
 ![image](https://user-images.githubusercontent.com/39303639/217681452-6215a336-1d60-44ff-8b0a-24fd38eb6575.png)
 
@@ -50,6 +50,3 @@ Una vez ejecutado, nos aparecerá el resultado, que podremos limpiar
 seleccionando `...` > `Clear Result`:
 
 ![image](https://user-images.githubusercontent.com/39303639/217708268-96fde236-2532-4a39-908a-a9bd0f0bfaec.png)
-
-
-
