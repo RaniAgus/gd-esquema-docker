@@ -9,10 +9,7 @@
 sea mayor o igual a $ 1000 ordenado por código de cliente.
 */
 
-SELECT clie_codigo, clie_razon_social
-FROM Cliente
-WHERE clie_limite_credito >= 10000
-ORDER BY clie_codigo
+
 
 /*
 2. Mostrar el código, detalle de todos los artículos vendidos en el año 2012
