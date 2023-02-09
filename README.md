@@ -54,11 +54,30 @@ misma que configuramos en el campo `SA_PASSWORD` del archivo
 
 ### Uso
 
-En la carpeta `scripts/` están todos los ejercicios comentados. Una vez
-resolvamos un ejercicio, seleccionamos el query y le damos a `Execute`:
+En la carpeta `scripts/` están todos los ejercicios comentados. Debemos abrir
+uno y seleccionar en la parte de arriba `<session>` > `New Session...`:
+
+![image](https://user-images.githubusercontent.com/39303639/217806602-3f5f2ab4-fd40-49fa-bf6c-8ff1c3b0af81.png)
+
+Ahí ya estará todo listo para empezar a ejecutar querys:
+
+![image](https://user-images.githubusercontent.com/39303639/217806819-54677585-03e1-4667-a4b8-7a8e9ec8f875.png)
+
+Una vez resolvamos un ejercicio, seleccionamos el query y le damos a `Execute`:
 
 ![image](https://user-images.githubusercontent.com/39303639/217720542-59ea42dc-a8fa-435d-a17a-38bf380ee34a.png)
 
 Y se va a mostrar el resultado:
 
 ![image](https://user-images.githubusercontent.com/39303639/217720669-902f3633-607b-4b63-bfbe-841a45c2f8c7.png)
+
+#### Troubleshooting
+
+En caso de que les aparezca el siguiente error:
+
+![image](https://user-images.githubusercontent.com/39303639/217807089-c3804c62-974d-4417-a111-df6e8f663edd.png)
+
+Alcanza con ir a `More actions...` > `Refresh Database`:
+
+![image](https://user-images.githubusercontent.com/39303639/217807227-d2af58ab-e0da-45e1-afe9-1453357de479.png)
+
