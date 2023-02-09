@@ -1,6 +1,7 @@
 /*
 # Práctica de T-SQL
-**Según el modelo dado resuelva:**
+
+Según el modelo dado resuelva:
 */
 
 /*
@@ -168,8 +169,8 @@ componentes.
 
 
 /*
-15. Cree el/los objetos de base de datos necesarios para que el objeto principal reciba un
-producto como parametro y retorne el precio del mismo.
+15. Cree el/los objetos de base de datos necesarios para que el objeto principal
+reciba un producto como parametro y retorne el precio del mismo.
 
 Se debe prever que el precio de los productos compuestos sera la sumatoria de los
 componentes del mismo multiplicado por sus respectivas cantidades. No se conocen

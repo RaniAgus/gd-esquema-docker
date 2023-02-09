@@ -1,7 +1,7 @@
 /*
 # Práctica de SQL
 
-**Según el modelo dado resuelva:**
+Según el modelo dado resuelva:
 */
 
 /*
@@ -123,7 +123,8 @@ campos que debe retornar son:
 - Cantidad de productos diferentes que compro en el último año
 - Monto de la mayor compra que realizo en el último año
 
-Se deberán retornar todos los clientes ordenados por la cantidad de veces que compro en el último año.
+Se deberán retornar todos los clientes ordenados por la cantidad de veces que
+compro en el último año.
 
 No se deberán visualizar NULLs en ninguna columna
 */
