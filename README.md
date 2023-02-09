@@ -5,7 +5,7 @@ Cómo practicar Gestión de Datos usando un Docker container.
 ## Setup
 
 | Comando        | Acción                                      |
-| -------------- | ------------------------------------------- |
+|----------------|---------------------------------------------|
 | `make`         | Levantar el container y restaurar el backup |
 | `make start`   | Solo levantar el container                  |
 | `make restore` | Solo restaurar el backup                    |
@@ -13,7 +13,7 @@ Cómo practicar Gestión de Datos usando un Docker container.
 | `make stop`    | Detener el container iniciado               |
 | `make clean`   | Borrar el container y la imagen asociada    |
 
-## Setup
+## Setup en Azure Data Studio
 
 Ambas prácticas cuentan con su propio Jupyter Notebook, que podemos abrir
 usando [Azure Data Studio]. Para esto, nos moveremos a `Notebooks` > 
